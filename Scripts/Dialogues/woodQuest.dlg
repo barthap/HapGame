@@ -1,0 +1,120 @@
+function main()
+	if variableExist("kid2_dialogueState") == true then
+		if getVariable("kid2_dialogueState") == 1 then
+			start2();
+		elseif getVariable("kid2_dialogueState") == 2 then
+			start3();
+		elseif getVariable("kid2_dialogueState") == 3 then
+			start4();
+		elseif getVariable("kid2_dialogueState") == 4 then
+			start5();
+		end
+	else
+		declareVariable("kid2_dialogueState", 0);
+		setVariable("kid2_dialogueState", 1);
+		start1();
+	end
+end
+
+-----------------------------------------------
+-- Dialogue 1
+-----------------------------------------------
+
+function start1()
+	DialogueText("Chcesz zadanie?", "");
+	Answer("Tak", "a1", "");
+	Answer("Spadaj", "a2", "");
+end
+
+function a1()
+	Monologue(2, "Przynieœ mi 25 sztuk drewna", "", "Dostaniesz 100 sztuk z³ota i 10 kamienia", "");
+	Answer("OK", "exit1Q", "");	
+end
+
+function a2()
+	setVariable("kid2_dialogueState", 3);
+	exit1();	
+end
+
+function exit1Q()
+	startQuest("Quests/kid2Quest.qst");
+	setVariable("kid2_dialogueState", 1);
+	exit1();
+end
+
+function exit1()
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 2
+-----------------------------------------------
+
+function start2()
+	if variableExist("kid2Quest_completed") == true then
+		if getVariable("kid2Quest_completed") == true then
+			setVariable("kid2_dialogueState", 2);
+			start3();
+		else
+			a3();
+		end
+	end
+end
+
+function a3()
+	DialogueText("Wykona³eœ ju¿ zadanie?", "");
+	Answer("Nie", "exit2", "");
+end
+
+function exit2()
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 3
+-----------------------------------------------
+
+function start3()
+	DialogueText("Dziêki. Oto twoja nagroda.", "");
+	Answer("Bywaj!", "exit3WR", "");
+end
+
+function exit3WR()
+	if variableExist("kid2Quest_completed") == true then
+		-- deleteVariable("kid2Quest_completed");
+		declareVariable("kid2Quest_deleteQuest", 2);
+		setVariable("kid2Quest_deleteQuest", true);
+		exit3();
+	end	
+end
+
+function exit3()
+	setVariable("kid2_dialogueState", 4);
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 4
+-----------------------------------------------
+
+function start4()
+	DialogueText("Nie bêdê z Tob¹ gada³!", "");
+	Answer("OK", "exit4", "");
+end
+
+function exit4()
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 5
+-----------------------------------------------
+
+function start5()
+	DialogueText("Chcesz czegoœ?", "");
+	Answer("Nie", "exit5", "");
+end
+
+function exit5()
+	deleteDialogue();
+end

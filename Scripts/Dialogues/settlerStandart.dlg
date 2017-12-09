@@ -1,0 +1,8 @@
+function main()
+	DialogueText("Nie mam teraz czasu", "");
+	Answer("OK", "exit", "");
+end
+
+function exit()
+	deleteDialogue();
+end

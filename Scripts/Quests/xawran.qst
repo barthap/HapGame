@@ -1,0 +1,11 @@
+function init()
+	setQuestName('Porozmawiaj z Xawranem');
+	setQuestDescription('Xawran to miejscowy kowal. Na pewno coœ dla ciebie znajdzie');	
+end
+
+function completed()
+	if getVariable('002_talked_with_xawran') == true then
+		Set('Player::exp', Get('Player::exp') + 50);
+		endQuest();
+	end
+end

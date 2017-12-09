@@ -1,0 +1,141 @@
+function main()
+	if variableExist("kid_dialogueState") == true then
+		if getVariable("kid_dialogueState") == 1 then
+			start2();
+		elseif getVariable("kid_dialogueState") == 2 then
+			start3();
+		elseif getVariable("kid_dialogueState") == 3 then
+			start4();
+		elseif getVariable("kid_dialogueState") == 4 then
+			start5();
+		end
+	else
+		declareVariable("kid_dialogueState", 0);
+		setVariable("kid_dialogueState", 0);
+		start1();
+	end
+end
+
+-----------------------------------------------
+-- Dialogue 1
+-----------------------------------------------
+
+function start1()
+	DialogueText("Chcesz dostaæ zadanie?", "Dialogues/sounds/kid/ID1_0.ogg");
+	Answer("A sk¹d ty bêdziesz mia³ nagrodê?", "a1", "Dialogues/sounds/kid/ID1_1.ogg");
+end
+
+function a1()
+	DialogueText("Mam trochê z³ociszy", "Dialogues/sounds/kid/ID1_2.ogg");
+	Answer("Dobra, biorê. Mów co to za zadanie", "a2", "Dialogues/sounds/kid/ID1_3.ogg");
+	Answer("Nie, dziêki", "action_exit1WQ", "Dialogues/sounds/kid/ID1_4.ogg");
+end
+
+function a2()
+	Monologue(2, "Chcê zobaczyæ czy jesteœ silny! Zabij szkieleta stoj¹cego na zboczu góry", "Dialogues/sounds/kid/ID1_5_0.ogg", "a w zamian dostaniesz 50 sztuk z³ota. Powodzenia!", "Dialogues/sounds/kid/ID1_5_1.ogg");
+	Answer("Dziêkuje", "action_exit1Q", "Dialogues/sounds/kid/ID1_6.ogg");
+end
+
+function action_exit1Q()
+	startQuest("Quests/kidQuest.qst");
+	setVariable("kid_dialogueState", 2);
+	exit1();
+end
+
+function action_exit1WQ()
+	setVariable("kid_dialogueState", 1);
+	exit1();
+end
+
+function exit1()
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 2
+-----------------------------------------------
+
+function start2()
+	DialogueText("Zmieni³eœ zdanie? Jednak chcesz zadanie?", "Dialogues/sounds/kid/ID1_7.ogg");
+	Answer("Tak", "a3", "Dialogues/sounds/kid/ID1_8.ogg");
+	Answer("Nie", "exit2", "Dialogues/sounds/kid/ID1_9.ogg");
+end
+
+function a3()
+	Monologue(3, "Zadanie jest takie:", "Dialogues/sounds/kid/ID1_10.ogg", "Chcê zobaczyæ czy jesteœ silny! Zabij szkieleta stoj¹cego na zboczu góry", "Dialogues/sounds/kid/ID1_5_0.ogg", "a w zamian dostaniesz 50 sztuk z³ota. Powodzenia!", "Dialogues/sounds/kid/ID1_5_1.ogg");
+	Answer("Dziêkuje", "action_exit2Q", "Dialogues/sounds/kid/ID1_6.ogg");
+end
+
+function action_exit2Q()
+	startQuest("Quests/kidQuest.qst");
+	setVariable("kid_dialogueState", 2);
+	exit2();
+end
+
+function exit2()
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 3
+-----------------------------------------------
+
+function start3()
+	if variableExist("kidQuest_completed") == true then
+		if getVariable("kidQuest_completed") == true then
+			setVariable("kid_dialogueState", 4);
+			start4();
+		else
+			a4();
+		end
+	end
+end
+
+function a4()
+	DialogueText("Czy wykona³eœ ju¿ zadanie?", "Dialogues/sounds/kid/ID1_11.ogg");
+	Answer("Nie?", "exit3", "Dialogues/sounds/kid/ID1_9.ogg");
+end
+
+function exit3()
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 4
+-----------------------------------------------
+
+function start4()
+	DialogueText("To by³a naprawdê niez³a walka! Nale¿y Ci siê te 50 sztuk z³ota. Oto one!", "Dialogues/sounds/kid/ID1_12.ogg");
+	Answer("Dziêki! Bywaj!", "action_endQuest", "Dialogues/sounds/kid/ID1_13.ogg");
+end
+
+function action_endQuest()
+	addGold(50);
+
+	if variableExist("kidQuest_completed") == true then
+		deleteVariable("kidQuest_completed");
+	end
+
+	declareVariable("removeQuest_kidQuest", 2);
+	setVariable("removeQuest_kidQuest", true);
+	
+	setVariable("kid_dialogueState", 4);
+	exit4();
+end
+
+function exit4()
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 5
+-----------------------------------------------
+
+function start5()
+	DialogueText("Nie mam teraz czasu", "Dialogues/sounds/kid/ID1_14.ogg");
+	Answer("OK", "exit5", "Dialogues/sounds/kid/ID1_15.ogg");
+end
+
+function exit5()
+	deleteDialogue();
+end

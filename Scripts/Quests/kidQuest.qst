@@ -1,0 +1,26 @@
+function init()
+	setQuestName("Poka¿ na co Ciê staæ");
+	setQuestDescription("Zabij szkieleta chodz¹cego niedaleko a w zamian dostaniesz 50 sztuk z³ota.");
+
+	declareVariable("kidQuest_completed", 2);
+	setVariable("kidQuest_completed", false);
+	qvSet(0, 0, Get("Monsters::skeleton::kills"));
+	qvSet(2, 0, false);
+end
+
+function completed()
+	if qvGet(0, 0) < Get("Monsters::skeleton::kills") then 
+		if qvGet(2, 0) ~= true then
+			setVariable("kidQuest_completed", true);
+			qvSet(2, 0, true);
+		end
+	end
+
+	if qvGet(2, 0) == true then
+		if variableExist("removeQuest_kidQuest") == true then
+			if getVariable("removeQuest_kidQuest") == true then
+				endQuest();
+			end
+		end
+	end
+end

@@ -1,0 +1,12 @@
+function init()
+	setQuestName("Napad");
+	setQuestDescription("Ukradnij kupcowi jego kolekcjê i przynieœ go hersztowi bandy");
+end
+
+function completed()
+	if variableExist('main_1_bandits_stole') == true then
+		deleteVariable('main_1_bandits_stole');
+
+		endQuest();
+	end
+end

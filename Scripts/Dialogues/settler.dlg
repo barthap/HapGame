@@ -1,0 +1,66 @@
+function main()
+	if variableExist("settler_dialogueState") then
+		if getVariable("settler_dialogueState") == 1 then
+			start2();
+		end
+	else
+		declareVariable("settler_dialogueState", 0);
+		setVariable("settler_dialogueState", 0);
+		start1();
+	end
+end
+
+-----------------------------------------------
+-- Dialogue 1
+-----------------------------------------------
+
+function start1()
+	DialogueText("Czego?", "Scripts/Dialogues/sounds/ID0_1.ogg");
+	Answer("Co tam masz?", "a1", "Scripts/Dialogues/sounds/ID0_2.ogg");
+	Answer("Co tam chowasz?", "a1", "Scripts/Dialogues/sounds/ID0_3.ogg");
+	Answer("Nic!", "exit1", "Scripts/Dialogues/sounds/ID0_4.ogg");
+end
+
+function a1()
+	DialogueText("Nic!", "Scripts/Dialogues/sounds/ID0_4.ogg");
+	Answer("OK", "exit1", "Scripts/Dialogues/sounds/ID0_5.ogg");
+	Answer("Nieprawda!", "a2", "Scripts/Dialogues/sounds/ID0_6.ogg");
+end
+function a2()
+	Monologue(2, "Dobra, mam przytulankê!", "Scripts/Dialogues/sounds/ID0_7_1.ogg", "Dam Ci 500 sztuk z³ota je¿eli nic nie piœniesz!", "Scripts/Dialogues/sounds/ID0_7_2.ogg");
+	Answer("OK", "action_a2", "Scripts/Dialogues/sounds/ID0_5.ogg");
+	Answer("Spadaj!", "attack_plr", "Scripts/Dialogues/sounds/ID0_8.ogg");
+	Answer("Nie, dziêkujê", "exit1", "");
+end
+
+function action_a2()
+	addGold(500);
+	exit1();
+end
+
+function attack_plr()
+	-- We must set dialogueState here because exit1() function won't be call
+	setVariable("settler_dialogueState", 1);
+	attackPlayer();
+
+	-- We're don't calling exit because attackPlayer() function will do it
+	-- exit1();
+end
+
+function exit1()
+	setVariable("settler_dialogueState", 1);
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 2
+-----------------------------------------------
+
+function start2()
+	DialogueText("Czego?", "Scripts/Scripts/Dialogues/sounds/ID0_1.ogg");
+	Answer("Nic!", "exit2", "Scripts/Scripts/Dialogues/sounds/ID0_4.ogg");
+end
+
+function exit2()
+	deleteDialogue();
+end

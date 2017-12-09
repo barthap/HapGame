@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------------
+-- Main
+--------------------------------------------------------------------------------------
+
+function main() 
+	if variableExist('main_1_bandints_option') == true then
+		if getVariable('main_1_bandints_option') == 1 then
+			a1();
+		else
+			a2();
+		end
+	else
+		a2();
+	end
+
+	triggerState(getObj('Trigger', 0), false);
+end
+
+--------------------------------------------------------------------------------------
+-- Dialogue 1
+--------------------------------------------------------------------------------------
+
+function a1()
+	DialogueText('Witaj ch³opcze, czego chcesz?', '');
+	Answer('Niczego, tak tylko sie rozgl¹dam', 'exitN', '');
+end
+
+function exitN()
+	deleteDialogue();
+end
+
+--------------------------------------------------------------------------------------
+-- Dialogue 2
+--------------------------------------------------------------------------------------
+
+function a2()
+	DialogueText('Witaj ch³opcze', '');
+	Answer('Witam! Przyszed³em sprzedaæ panu miecz od ojca', 'a2_next', '');
+end
+
+function a2_next()
+	DialogueText('A tak, ten który zamówi³em. Ile jestem winien?', '');
+	Answer('45 sztuk z³ota', 'a2_next2', '');
+end
+
+function a2_next2()
+	addGold(45);
+
+	if variableExist('main_1_merchant_sword_sell') == true then
+		setVariable('main_1_merchant_sword_sell', true);
+	else
+		declareVariable('main_1_merchant_sword_sell', 2);
+		setVariable('main_1_merchant_sword_sell', true);
+	end
+
+	DialogueText('Proszê. A co u Ciebie?', '');
+	if variableExist('main_1_bandints_option') == true then
+		Answer('W drodze tutaj zatrzymali mnie bandyci', 'a2_d', '');
+	else
+		Answer('A nic.', 'a2_next2e', '');
+	end
+end
+
+function a2_next2e()
+	DialogueText('Wiêc bywaj', '');
+	Answer('Bywaj', 'exit', '');
+end
+
+function a2_d()
+	DialogueText('Naprawdê?', '');
+	Answer('Tak, przestraszy³em siê. Pytali siê po co idê', 'a2_d2', '');
+end
+
+function a2_d2()
+	DialogueText('I co im powiedzia³eœ?', '');
+	Answer('¯e idê sprzedaæ miecz', 'a2_d3', '');
+end
+
+function a2_d3()
+	DialogueText('A co oni na to?', '');
+	Answer('Chcieli bym da³ im ten miecz i w³ama³ siê do Pana za 45 sztuk z³ota', 'a2_d4', '');
+end
+
+function a2_d4()
+	DialogueText('Aaa, to Ty wo³a³eœ stra¿. S³usznie postapi³eœ. Bywaj', '');
+	Answer('Bywaj', 'exit', '');
+end
+
+--------------------------------------------------------------------------------------
+-- Exit
+--------------------------------------------------------------------------------------
+
+function exit()
+	setDialoguePath(getObj('Chr', 1), '');
+	deleteDialogue();
+end

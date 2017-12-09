@@ -1,0 +1,21 @@
+﻿//-------------------------
+// Teszt függvény
+//-------------------------
+private string GetLastWord()
+{
+	int pos = this.SelectionStart - 1;
+
+	while (pos > 1)
+	{
+		string substr = this.Text.Substring(pos - 1, 1);
+
+		if (Char.IsWhiteSpace(substr, 0))
+		{
+			return Text.Substring(pos, this.SelectionStart - pos);
+		}
+
+		pos--;
+	}
+
+	return Text.Substring(0, this.SelectionStart);
+}

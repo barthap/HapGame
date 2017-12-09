@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C125DA37-9A3C-4187-AC76-0D47476414E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hapex.HapGame.Editor</RootNamespace>
+    <AssemblyName>ModEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>N:\Program Files (x86)\DotNetBar\Bin\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="Win32, Version=0.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Win32.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Core" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ElementHost.cs" />
+    <None Include="frmRenderer.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="frmRenderer.Designer.cs">
+      <DependentUpon>frmRenderer.cs</DependentUpon>
+    </None>
+    <Compile Include="gameCmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameCmd.Designer.cs">
+      <DependentUpon>gameCmd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileExplorer.designer.cs">
+      <DependentUpon>FileExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileExplorerTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileExplorerTree.designer.cs">
+      <DependentUpon>FileExplorerTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocument.Designer.cs">
+      <DependentUpon>frmDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewModName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewModName.Designer.cs">
+      <DependentUpon>NewModName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsDlg.Designer.cs">
+      <DependentUpon>SettingsDlg.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmRenderer.resx">
+      <DependentUpon>frmRenderer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameCmd.resx">
+      <DependentUpon>gameCmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileExplorer.resx">
+      <DependentUpon>FileExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileExplorerTree.resx">
+      <DependentUpon>FileExplorerTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocument.resx">
+      <DependentUpon>frmDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewModName.resx">
+      <DependentUpon>NewModName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>Hapex.HapGame.Editor.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettingsDlg.resx">
+      <DependentUpon>SettingsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\paste_plain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CodeTextBox\CodeTextBox.csproj">
+      <Project>{2C9E628D-0909-428B-967F-84CFF0967B64}</Project>
+      <Name>CodeTextBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folderclosed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folderopen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harddrive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script_gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_osx_terminal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

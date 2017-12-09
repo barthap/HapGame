@@ -1,0 +1,38 @@
+function main()
+	start1();
+end
+
+function start1()
+	DialogueText("Wylosuj zagadkÍ!", "");
+	Answer("Zagadka 1", "a1", "");
+	Answer("Zagadka 2", "a2", "");
+end
+
+function a1()
+	Monologue(5, "Kiedy jechalem do Middleton, spotka≥em goúcia", "", "co ma 7 øon, kaøda øona ma 7 workÛw", "", "a w kaødym worku 7 kotÛw", "", "Kaødy kot ma 4 ≥apki, a na kaødej ≥apie", "", "po 4 ≥atki, Ilu jechalo do Middleton?");
+	Answer("ja", "good", "");
+	Answer("ja, goúÊ i øony", "bad", "");
+	Answer("ja, goúÊ, øony i koty", "bad", "");
+end
+
+function a2()
+	Monologue(3, "Ojciec i matka mieli 7 synÛw", "", "Kaødy syn mia≥ jednπ siostrÍ", "", "Ile osÛb liczy≥a rodzina?", "");
+	Answer("16", "bad", "");
+	Answer("9", "good", "");
+	Answer("8", "bad", "");
+end
+
+function good()
+	DialogueText("Bravo, dobrze!", "");
+	Answer("Yeach!", "exit1", "");
+end
+
+function bad()
+	DialogueText("èle", "");
+	Answer("A niech to", "exit1", "");
+end
+
+
+function exit1()
+	deleteDialogue();
+end

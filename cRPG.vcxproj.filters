@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="H">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="H\_">
+      <UniqueIdentifier>{92feba5d-32f1-4c90-833f-14ae7070ae7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils">
+      <UniqueIdentifier>{28fac4bc-f0d2-4456-9395-3093799843b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game Obj Extends">
+      <UniqueIdentifier>{03d48275-6357-43ca-9a76-0c275b3fa9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Scripts">
+      <UniqueIdentifier>{35160fcc-76c0-4fbb-a559-5c95f97b982a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game Obj Extends\Custom Objs">
+      <UniqueIdentifier>{6bab8f4b-2ed7-424f-a325-e7af38bf48a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Dialogue.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Fireball.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Forces.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Horse.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Inventory Gui.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Inventory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Item.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Loader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LootGui.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Menu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MerchantGui.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Messages.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Mods.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Options.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Quest.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\QuestGui.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SaveGame.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shortcuts.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\smallcodeObjects.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Stats Gui.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Storage.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Teleport.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\universalMenu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Freecode Objects\Tree.cpp">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>H\_</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AI.cpp">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Character.cpp">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player.cpp">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Camera.cpp">
+      <Filter>Source\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Time.cpp">
+      <Filter>Source\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Weather.cpp">
+      <Filter>Source\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Destructible.cpp">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Trigger.cpp">
+      <Filter>Source\Game Obj Extends\Custom Objs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\scriptFunctions.cpp">
+      <Filter>Source\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\scriptVariables.cpp">
+      <Filter>Source\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Steering.cpp">
+      <Filter>Source\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\3DSoundObject.cpp">
+      <Filter>Source\Game Obj Extends\Custom Objs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Console.cpp">
+      <Filter>Source\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\scriptObjects.cpp">
+      <Filter>Source\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\scriptMath.cpp">
+      <Filter>Source\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Torchiere.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Door.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Dialogue.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Fireball.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Forces.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Horse.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Inventory Gui.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Inventory.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Item.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Loader.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LootGui.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Main.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Menu.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MerchantGui.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Messages.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Mods.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Options.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Quest.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\QuestGui.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SaveGame.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Shortcuts.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\smallcodeObjects.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Stats Gui.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Storage.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Teleport.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\universalMenu.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Freecode Objects\Tree.h">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>H\_</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>H\_</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AI.h">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Character.h">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Player.h">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Camera.h">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Time.h">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Weather.h">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Destructible.h">
+      <Filter>Source\Game Obj Extends</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Trigger.h">
+      <Filter>Source\Game Obj Extends\Custom Objs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\scriptFunctions.h">
+      <Filter>Source\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\scriptVariables.h">
+      <Filter>Source\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Steering.h">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\3DSoundObject.h">
+      <Filter>Source\Game Obj Extends\Custom Objs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Console.h">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\Enum\_enums.h">
+      <Filter>H\_</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\scriptObjects.h">
+      <Filter>Source\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\scriptMath.h">
+      <Filter>Source\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Torchiere.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Door.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon.ico">
+      <Filter>H\_</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>H\_</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

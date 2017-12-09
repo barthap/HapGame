@@ -1,0 +1,33 @@
+function init()
+	setQuestName("Drewno");
+	setQuestDescription("Przynieœ 25 sztuk drewna mieszkañcowi a w zamian dostaniesz 100 sztuk z³ota i 10 sztuk kamienia");
+end
+
+function completed()
+	if Get("Player::wood") >= 25 then
+		if variableExist("kid2Quest_completed") == true then
+			setVariable("kid2Quest_completed", true);
+		else
+			declareVariable("kid2Quest_completed", 2);
+			setVariable("kid2Quest_completed", true);
+		end
+	else
+		if variableExist("kid2Quest_completed") == true then
+			setVariable("kid2Quest_completed", false);
+		else
+			declareVariable("kid2Quest_completed", 2);
+			setVariable("kid2Quest_completed", false);
+		end		
+	end
+	
+	if variableExist("kid2Quest_deleteQuest") == true then
+		if getVariable("kid2Quest_deleteQuest") == true then
+			Set("Player::wood", Get("Player::wood") - 25);
+			-- Set("Player::gold", Get("Player::gold") + 100);
+			addGold(100);
+			Set("Player::stone", Get("Player::stone") + 10);
+			deleteVariable("kid2Quest_deleteQuest");
+			endQuest();
+		end	
+	end
+end

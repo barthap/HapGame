@@ -1,0 +1,15 @@
+function init()
+	setQuestName("Daj siê rozwaliæ");
+	setQuestDescription("Straæ conajmniej 20 punktów ¿ycia a dostaniesz pe³ne uzdrowienie i 100 sztuk z³ota");
+
+	qvSet(0, 0, Get("Player::health"));
+end
+
+function completed()
+	if Get("Player::health") <= (qvGet(0, 0) - 20) then
+		addGold(100);
+		Set("Player::Health", 100);
+
+		endQuest();
+	end
+end

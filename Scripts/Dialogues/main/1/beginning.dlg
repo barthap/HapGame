@@ -1,0 +1,59 @@
+--------------------------------------------------------------------------------------
+-- Main
+--------------------------------------------------------------------------------------
+
+function main() 
+	if variableExist('main_1_beginning_talked') == true then
+		a2();
+	else
+		declareVariable('main_1_beginning_talked', 2);
+		setVariable('main_1_beginning_talked', false);
+		a1();
+	end
+end
+
+--------------------------------------------------------------------------------------
+-- Dialogue 1
+--------------------------------------------------------------------------------------
+
+function a1()
+	Monologue(3, 'Dobrze, ¿e jesteœ', '', 'Skoñczy³em miecz dla kupca ale nie mogê go mu teraz dostarczyæ gdyz mam do za³atwienia piln¹ sprawê', '', 'Dostarczysz go za mnie do kupcowi do jego sklepu obok magazynu', '');
+	Answer('Bardzo chêtnie', 'a1_yes', '');
+	Answer('Muszê? Chcia³em siê spotkaæ z koleg¹?', 'a1_no', '');
+end
+
+function a1_yes()
+	DialogueText('To fantastycznie! Pamiêtaj tylko by nie iœæ lasem!', '');
+	Answer('Dobrze', 'exitWQ', '');
+end
+
+function a1_no()
+	DialogueText('Tak musisz! To bardzo wa¿ne! Pamiêtaj tylko by nie iœæ lasem!', '');
+	Answer('No dobrze', 'exitWQ', '');
+end
+
+function exitWQ()
+	startQuest('Quests/main/1/sword.qst');
+
+	-- eqGiveObj(getObj('Player'), 'Obj/Item/Weapon/Blunt/Club/0.obj');
+
+	exit();
+end
+
+--------------------------------------------------------------------------------------
+-- Dialogue 2
+--------------------------------------------------------------------------------------
+
+function a2()
+	DialogueText('Dostraczy³eœ ju¿ miecz?', '');
+	Answer('Jeszcze nie', 'exit', '');
+end
+
+--------------------------------------------------------------------------------------
+-- Exit
+--------------------------------------------------------------------------------------
+
+function exit()
+	setVariable('main_1_beginning_talked', true);
+	deleteDialogue();
+end

@@ -1,0 +1,55 @@
+function main()
+	if variableExist("test_goblin_dialogueState") then
+		if getVariable("test_goblin_dialogueState") == 1 then
+			start2();
+		else
+			start1();		
+		end
+	else
+		declareVariable("test_goblin_dialogueState", 0);
+		setVariable("test_goblin_dialogueState", 0);
+		start1();
+	end
+end
+
+-----------------------------------------------
+-- Dialogue 1
+-----------------------------------------------
+
+function start1()
+	DialogueText("Pokazaæ Ci coœ?", "");
+	Answer("Tak", "a1", "");
+	Answer("Nie", "exit1", "");
+end
+
+function a1()
+	DialogueText("ChodŸ za mn¹", "");
+	Answer("OK", "exit1G", "");
+end
+
+function exit1G()
+	if variableExist("goblin_dialogueEnd") == true then
+		setVariable("goblin_dialogueEnd", true);
+	else
+		declareVariable("goblin_dialogueEnd", 2);
+		setVariable("goblin_dialogueEnd", true);
+	end
+	exit1();
+end
+
+function exit1()
+	deleteDialogue();
+end
+
+-----------------------------------------------
+-- Dialogue 2
+-----------------------------------------------
+
+function start2()
+	DialogueText("Czego?", "");
+	Answer("Nic", "exit2", "");
+end
+
+function exit2()
+	deleteDialogue();
+end

@@ -1,0 +1,51 @@
+function main() 
+	if variableExist('001_talked_on_begining') == true then
+		if getVariable('001_talked_on_begining') == false then
+			DialogueText('Wstawajcie, jesteœcie chyba nie tacy chorzy.', '');
+			Answer('Gdzie moje ubrania?!', 'a1', '');
+			Answer('Dziêkujê wam za opiekê.', 'a2', '');
+		else
+			DialogueText('Czego chcesz?', '');
+			Answer('Tak sobie stojê', 'a5', ''); 
+		end
+	else
+		declareVariable('001_talked_on_begining', 2);
+		setVariable('001_talked_on_begining', false);
+		main();
+	end
+end
+
+function a1()
+	DialogueText('Co to, opuszczacie nas tak bez po¿egnania.', '');
+	Answer('Muszê zaraz wyjœæ!', 'a3', '');
+	Answer('No dobrze, dziêkujê serdecznie za opiekê.', 'a2', '');
+end
+
+function a2()
+	DialogueText('Zrobi³em co do mnie nale¿a³o panie', '');
+	Answer('Dobra, muszê was opuœciæ.', 'a4', '');
+end
+ 
+function a3()
+	DialogueText('Widzicie go jaki narwany. Porozmawiajcie z Xawranem, to miejscowy kowal. Coœ dla was znajdzie, bo nie macie niczego', '');
+	Answer('OK', 'exitWQ', '');
+end
+
+function a4()
+	DialogueText('Jak chcecie to pogadajcie z kowalem Xawranem, coœ dla was znajdzie, bo nic nie macie.', '');
+	Answer('OK', 'exitWQ', '');
+end
+
+function a5()
+	exit();
+end
+
+function exitWQ()
+	startQuest('Quests/xawran.qst');
+	exit();
+end
+
+function exit()
+	setVariable('001_talked_on_begining', true);
+	deleteDialogue();
+end

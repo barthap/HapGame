@@ -1,0 +1,8 @@
+function main()
+	DialogueText("W demówce nie ma ryb :P", "");
+	Answer("OK", "exit", "");
+end
+
+function exit()
+	deleteDialogue();
+end

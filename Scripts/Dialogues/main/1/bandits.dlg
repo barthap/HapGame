@@ -1,0 +1,197 @@
+--------------------------------------------------------------------------------------
+-- main_1_bandints_option
+------------------------------------------
+-- 0: bandyci uciekaj¹
+-- 1: zgadzasz siê na kradzie¿
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+-- Main
+--------------------------------------------------------------------------------------
+
+function main()	
+	if variableExist('main_1_bandints_talked') == true then
+		if getVariable('main_1_bandints_option') == 1 then
+			if eqCheckObj(getObj('Player'), 'Napiersnik Kolekcjonerski') == true then
+				a6();
+			else
+				a7();
+			end
+		else
+			a2_after();
+		end
+	else
+		declareVariable('main_1_bandints_talked', 2);
+		setVariable('main_1_bandints_talked', false);
+		a1();
+	end
+end
+
+--------------------------------------------------------------------------------------
+-- Dialogue 1
+--------------------------------------------------------------------------------------
+
+function a1()
+	DialogueText('Gdzie tak siê spieszysz', '');
+	Answer('Do babci', 'a1_yes', '');
+	Answer('Muszê zanieœæ ten miecz kupcowi', 'a1_no', '');
+end
+
+function a1_yes()
+	DialogueText('Ha ha, biedna babunia czeka wnuczusia', '');
+	Answer('No dobra, muszê zanieœc ten miecz kupcowi', 'a1_next', '');
+end
+
+function a1_next()
+	DialogueText('A wiêc k³ama³eœ?', '');
+	Answer('No... Tak', 'a1_next2', '');
+end
+
+function a1_next2()
+	Monologue(2, 'Nas nie wolno ok³amywaæ', '', 'Ale jesteœ m³ody. Mog³eœ nie wiedzieæ, darujemy Ci', '');
+	Answer('A wiêc przepuœcicie mnie?', 'a1_next3', '');
+end
+
+function a1_next3()
+	DialogueText('A jakiemu kupcowi masz sprzedaæ ten miecz?', '');
+	Answer('Temu ko³o magazynu', 'a3', '');
+end
+
+function a1_no()
+	DialogueText('Jakiemu kupcowi?', '');
+	Answer('Temu ko³o magazynu', 'a3', '');
+end
+
+function a3()
+	DialogueText('Temu staremu oszustowi?', '');
+	Answer('Nie nazywaj go oszustem', 'a3_next', '');
+end
+
+function a3_next()
+	DialogueText('Ma³y! Nie takim tonem. Nawet nie wiesz co on zrobi³', '');
+	Answer('Co?', 'a3_next2', '');
+end
+
+function a3_next2()
+	DialogueText('Zabi³ Atakronosa', '');
+	Answer('Serio?', 'a3_next3', '');
+end
+
+function a3_next3()
+	Monologue(2, 'Tak. Ale uda³o mu siê uciec', '', 'Teraz w wiêzieniu siedzi za niego niewinna osoba', '');
+	Answer('Kto taki?', 'a3_next4', '');
+end
+
+function a3_next4()
+	DialogueText('Mój brat', '');
+	Answer('Naprawdê?', 'a3_next4_brother', '');
+	Answer('£¿esz draniu', 'a3_next4_lie', '');
+end
+
+function a3_next4_brother()
+	DialogueText('Naprawdê... I na pewno oszuka Ciê przy sprzedazy miecza', '');
+	Answer('A wiêc co mam zrobiæ? Musze oddaæ ojcu 45 sztuk z³ota ze sprzeda¿y miecza', 'a4', '');
+end
+
+function a4()
+	DialogueText('Oddaj nam miecz i ukradnij kolekcjê kupca', '');
+	Answer('Co?', 'a4_next', '');
+end
+
+function a4_next()
+	DialogueText('Damy Ci za to 45 sztuk z³ota', '');
+	Answer('To przestêpstwo! Stra¿, stra¿!', 'a5', '');
+	Answer('Dobra, spróbujê! Gdzie przynieœæ ³up?', 'a4_next2', '');
+end
+
+function a4_next2()
+	DialogueText('Tutaj, bêdziemy na Ciebie czekaæ', '');
+	Answer('No to idê', 'exitWS', '');
+end
+
+function a3_next4_lie()
+	DialogueText('Nie k³amie... I mówi³em Ci, nie takim tonem', '');
+	Answer('Jesteœcie band¹ drani i oszustów! Stra¿! Stra¿!', 'a5', '');
+end
+
+function a5()
+	-- Bandyci uciekaj¹
+	declareVariable('main_1_bandints_option', 0);
+	setVariable('main_1_bandints_option', 0);
+	setVariable('main_1_bandints_talked', true);
+end
+
+function exitWS()
+	startQuest('Quests/main/1/bandits.qst');
+
+	-- eqRemoveObj(getObj('Player'), getObj('Chr', 0), 'Napiersnik Kolekcjonerski', 1); 
+
+	declareVariable('main_1_bandints_option', 0);
+	setVariable('main_1_bandints_option', 1);
+	setVariable('main_1_bandints_talked', true);
+
+	exit();
+end
+
+--------------------------------------------------------------------------------------
+-- Dialogue 2
+--------------------------------------------------------------------------------------
+
+function a2()
+	DialogueText('Wykona³eœ ju¿ napad?', '');
+	Answer('Jeszcze nie', 'exit', '');
+end
+
+function a2_after()
+	DialogueText('Spadaj zt¹d dzieciaku', '');
+	Answer('Dobrze', 'exit', '');
+end
+
+--------------------------------------------------------------------------------------
+-- Dialogue 3
+--------------------------------------------------------------------------------------
+
+function a6()
+	DialogueText('Wykona³eœ ju¿ napad?', '');
+	Answer('Tak. Oto kolekcja', 'a6_after', '');
+end
+
+function a6_after()
+	eqRemoveObj(getObj('Player'), getObj('Chr', 0), 'Napiersnik Kolekcjonerski', 1);
+	addGold(45);
+
+	if variableExist('main_1_merchant_sword_sell') == true then
+		setVariable('main_1_merchant_sword_sell', true);
+	else
+		declareVariable('main_1_merchant_sword_sell', 2);
+		setVariable('main_1_merchant_sword_sell', true);
+	end
+
+	if variableExist('main_1_bandits_stole') == true then
+		setVariable('main_1_bandits_stole', true);
+	else
+		declareVariable('main_1_bandits_stole', 2);
+		setVariable('main_1_bandits_stole', true);
+	end
+
+	DialogueText('Oto twoje z³oto. Mo¿e kiedys nasze drogi znów sie skrzy¿uj¹...', '');
+	Answer('Mo¿e, bywaj... Powiniennem juz wracaŸ do ojca', 'exit', '');
+end
+
+--------------------------------------------------------------------------------------
+-- Dialogue 4
+--------------------------------------------------------------------------------------
+
+function a7()
+	DialogueText('Czego?', '');
+	Answer('Niczego', 'exit', '');
+end
+
+--------------------------------------------------------------------------------------
+-- Exit
+--------------------------------------------------------------------------------------
+
+function exit()
+	setVariable('main_1_bandits_talked', true);
+	deleteDialogue();
+end

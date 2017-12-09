@@ -1,0 +1,1182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dockSite4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dockSite4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 490</value>
+  </data>
+  <data name="dockSite4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dockSite4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dockSite4.Name" xml:space="preserve">
+    <value>dockSite4</value>
+  </data>
+  <data name="&gt;&gt;dockSite4.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockSite, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockSite4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockSite4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bar2.AccessibleDescription" xml:space="preserve">
+    <value>FileExplorer (bar2)</value>
+  </data>
+  <data name="bar2.AccessibleName" xml:space="preserve">
+    <value>FileExplorer</value>
+  </data>
+  <data name="fileExplorer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fileExplorer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="fileExplorer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 389</value>
+  </data>
+  <data name="fileExplorer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fileExplorer1.Name" xml:space="preserve">
+    <value>fileExplorer1</value>
+  </data>
+  <data name="&gt;&gt;fileExplorer1.Type" xml:space="preserve">
+    <value>Hapex.HapGame.Editor.FileExplorer, ModEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fileExplorer1.Parent" xml:space="preserve">
+    <value>panelDockContainer2</value>
+  </data>
+  <data name="&gt;&gt;fileExplorer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelDockContainer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 23</value>
+  </data>
+  <data name="panelDockContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 389</value>
+  </data>
+  <data name="panelDockContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="panelDockContainer2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;panelDockContainer2.Name" xml:space="preserve">
+    <value>panelDockContainer2</value>
+  </data>
+  <data name="&gt;&gt;panelDockContainer2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.PanelDockContainer, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;panelDockContainer2.Parent" xml:space="preserve">
+    <value>bar2</value>
+  </data>
+  <data name="&gt;&gt;panelDockContainer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fileExplorerTree1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fileExplorerTree1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="fileExplorerTree1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 389</value>
+  </data>
+  <data name="fileExplorerTree1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fileExplorerTree1.Name" xml:space="preserve">
+    <value>fileExplorerTree1</value>
+  </data>
+  <data name="&gt;&gt;fileExplorerTree1.Type" xml:space="preserve">
+    <value>Hapex.HapGame.Editor.FileExplorerTree, ModEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fileExplorerTree1.Parent" xml:space="preserve">
+    <value>panelDockContainer1</value>
+  </data>
+  <data name="&gt;&gt;fileExplorerTree1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelDockContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 23</value>
+  </data>
+  <data name="panelDockContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 389</value>
+  </data>
+  <data name="panelDockContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panelDockContainer1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;panelDockContainer1.Name" xml:space="preserve">
+    <value>panelDockContainer1</value>
+  </data>
+  <data name="&gt;&gt;panelDockContainer1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.PanelDockContainer, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;panelDockContainer1.Parent" xml:space="preserve">
+    <value>bar2</value>
+  </data>
+  <data name="&gt;&gt;panelDockContainer1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bar2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="dockContainerItem1.Text" xml:space="preserve">
+    <value>ModExplorer</value>
+  </data>
+  <data name="dockContainerItem2.Text" xml:space="preserve">
+    <value>FileExplorer</value>
+  </data>
+  <data name="bar2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="bar2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 440</value>
+  </data>
+  <data name="bar2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="bar2.Text" xml:space="preserve">
+    <value>FileExplorer</value>
+  </data>
+  <data name="&gt;&gt;bar2.Name" xml:space="preserve">
+    <value>bar2</value>
+  </data>
+  <data name="&gt;&gt;bar2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Bar, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;bar2.Parent" xml:space="preserve">
+    <value>dockSite1</value>
+  </data>
+  <data name="&gt;&gt;bar2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dockSite1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="dockSite1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="dockSite1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 440</value>
+  </data>
+  <data name="dockSite1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dockSite1.Name" xml:space="preserve">
+    <value>dockSite1</value>
+  </data>
+  <data name="&gt;&gt;dockSite1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockSite, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockSite1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockSite1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>980, 506</value>
+  </data>
+  <data name="contextMenuBar1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="popModInfoDat.Text" xml:space="preserve">
+    <value>Open info.dat</value>
+  </data>
+  <data name="popDeleteMod.Text" xml:space="preserve">
+    <value>Delete this mod</value>
+  </data>
+  <data name="popRunGameMod.Text" xml:space="preserve">
+    <value>Run game with this mod</value>
+  </data>
+  <data name="modPopup.Text" xml:space="preserve">
+    <value>modPopup</value>
+  </data>
+  <data name="contextMenuBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 89</value>
+  </data>
+  <data name="contextMenuBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 25</value>
+  </data>
+  <data name="contextMenuBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="contextMenuBar1.Text" xml:space="preserve">
+    <value>contextMenuBar1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuBar1.Name" xml:space="preserve">
+    <value>contextMenuBar1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuBar1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ContextMenuBar, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;contextMenuBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;contextMenuBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tabStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 50</value>
+  </data>
+  <data name="tabStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>721, 23</value>
+  </data>
+  <data name="tabStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="tabStrip1.Text" xml:space="preserve">
+    <value>tabStrip1</value>
+  </data>
+  <data name="&gt;&gt;tabStrip1.Name" xml:space="preserve">
+    <value>tabStrip1</value>
+  </data>
+  <data name="&gt;&gt;tabStrip1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.TabStrip, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;tabStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dockSite2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="dockSite2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>980, 50</value>
+  </data>
+  <data name="dockSite2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 440</value>
+  </data>
+  <data name="dockSite2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dockSite2.Name" xml:space="preserve">
+    <value>dockSite2</value>
+  </data>
+  <data name="&gt;&gt;dockSite2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockSite, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockSite2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockSite2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dockSite3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="dockSite3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="dockSite3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 0</value>
+  </data>
+  <data name="dockSite3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dockSite3.Name" xml:space="preserve">
+    <value>dockSite3</value>
+  </data>
+  <data name="&gt;&gt;dockSite3.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockSite, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockSite3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockSite3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="dockSite5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="dockSite5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="dockSite5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 440</value>
+  </data>
+  <data name="dockSite5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dockSite5.Name" xml:space="preserve">
+    <value>dockSite5</value>
+  </data>
+  <data name="&gt;&gt;dockSite5.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockSite, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockSite5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockSite5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="dockSite6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="dockSite6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>980, 50</value>
+  </data>
+  <data name="dockSite6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 440</value>
+  </data>
+  <data name="dockSite6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dockSite6.Name" xml:space="preserve">
+    <value>dockSite6</value>
+  </data>
+  <data name="&gt;&gt;dockSite6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockSite, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockSite6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockSite6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="menuBar.AccessibleDescription" xml:space="preserve">
+    <value>Menu bar (menuBar)</value>
+  </data>
+  <data name="menuBar.AccessibleName" xml:space="preserve">
+    <value>Menu bar</value>
+  </data>
+  <data name="menuBar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <metadata name="cmdNew.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>425, 56</value>
+  </metadata>
+  <data name="newMenuItem.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <metadata name="cmdOpen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>525, 56</value>
+  </metadata>
+  <data name="openMenuItem.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <metadata name="cmdSave.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1343, 17</value>
+  </metadata>
+  <data name="saveMenuItem.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <metadata name="cmdSaveAs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>630, 56</value>
+  </metadata>
+  <data name="saveAsMenuItem.Text" xml:space="preserve">
+    <value>&amp;Save as...</value>
+  </data>
+  <data name="closeMenuItem.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="printMenuItem.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="printMenuItem.Tooltip" xml:space="preserve">
+    <value>Printing not avaiable yet</value>
+  </data>
+  <data name="buttonItem5.Text" xml:space="preserve">
+    <value>Print Pre&amp;view</value>
+  </data>
+  <data name="buttonItem10.Text" xml:space="preserve">
+    <value>Page &amp;settings</value>
+  </data>
+  <data name="exitMenuItem.Text" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="buttonItem1.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="undoMenuItem.Text" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="redoMenuItem.Text" xml:space="preserve">
+    <value>&amp;Redo</value>
+  </data>
+  <data name="cutMenuItem.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="copyMenuItem.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="pasteMenuItem.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="buttonItem8.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="settingsMenuItem.Text" xml:space="preserve">
+    <value>&amp;Settings</value>
+  </data>
+  <data name="buttonItem6.Text" xml:space="preserve">
+    <value>&amp;Tools</value>
+  </data>
+  <data name="cascadeWndMenuItem.Text" xml:space="preserve">
+    <value>&amp;Cascade</value>
+  </data>
+  <data name="tileVerticalMenuItem.Text" xml:space="preserve">
+    <value>Tile &amp;vertical</value>
+  </data>
+  <data name="tileHorizontalMenuItem.Text" xml:space="preserve">
+    <value>Tile &amp;horizontal</value>
+  </data>
+  <data name="windowMenu.Text" xml:space="preserve">
+    <value> &amp;Window</value>
+  </data>
+  <data name="buttonItem17.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="buttonItem12.Text" xml:space="preserve">
+    <value>&amp;About...</value>
+  </data>
+  <data name="buttonItem11.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="menuBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 24</value>
+  </data>
+  <data name="menuBar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuBar.Text" xml:space="preserve">
+    <value>Menu bar</value>
+  </data>
+  <data name="&gt;&gt;menuBar.Name" xml:space="preserve">
+    <value>menuBar</value>
+  </data>
+  <data name="&gt;&gt;menuBar.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Bar, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;menuBar.Parent" xml:space="preserve">
+    <value>dockSite7</value>
+  </data>
+  <data name="&gt;&gt;menuBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="stdToolbar.AccessibleDescription" xml:space="preserve">
+    <value>Standard Toolbar (stdToolbar)</value>
+  </data>
+  <data name="stdToolbar.AccessibleName" xml:space="preserve">
+    <value>Standard Toolbar</value>
+  </data>
+  <data name="stdToolbar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="buttonItem2.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="buttonItem3.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="saveToolbarItem.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="buttonItem14.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="buttonItem15.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="buttonItem16.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="buttonItem13.Text" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="buttonItem4.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="buttonItem4.Tooltip" xml:space="preserve">
+    <value>Printing not avaiable yet</value>
+  </data>
+  <data name="stdToolbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="stdToolbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 25</value>
+  </data>
+  <data name="stdToolbar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="stdToolbar.Text" xml:space="preserve">
+    <value>Standard Toolbar</value>
+  </data>
+  <data name="&gt;&gt;stdToolbar.Name" xml:space="preserve">
+    <value>stdToolbar</value>
+  </data>
+  <data name="&gt;&gt;stdToolbar.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Bar, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;stdToolbar.Parent" xml:space="preserve">
+    <value>dockSite7</value>
+  </data>
+  <data name="&gt;&gt;stdToolbar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="toolsBar.AccessibleDescription" xml:space="preserve">
+    <value>Tools (toolsBar)</value>
+  </data>
+  <data name="toolsBar.AccessibleName" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="runRenderer.Text" xml:space="preserve">
+    <value>Show Renderer</value>
+  </data>
+  <data name="runRenderer.Tooltip" xml:space="preserve">
+    <value>Show Renderer</value>
+  </data>
+  <data name="toolsBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 25</value>
+  </data>
+  <data name="toolsBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 25</value>
+  </data>
+  <data name="toolsBar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="toolsBar.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="&gt;&gt;toolsBar.Name" xml:space="preserve">
+    <value>toolsBar</value>
+  </data>
+  <data name="&gt;&gt;toolsBar.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Bar, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;toolsBar.Parent" xml:space="preserve">
+    <value>dockSite7</value>
+  </data>
+  <data name="&gt;&gt;toolsBar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="modToolbar.AccessibleDescription" xml:space="preserve">
+    <value>Game tools (modToolbar)</value>
+  </data>
+  <data name="modToolbar.AccessibleName" xml:space="preserve">
+    <value>Game tools</value>
+  </data>
+  <data name="modToolbar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="gameRun.Text" xml:space="preserve">
+    <value>Run game without mods</value>
+  </data>
+  <data name="gameRun.Tooltip" xml:space="preserve">
+    <value>Run game without mods</value>
+  </data>
+  <data name="gameCmd.Text" xml:space="preserve">
+    <value>Run game command line</value>
+  </data>
+  <data name="gameCmd.Tooltip" xml:space="preserve">
+    <value>Run game command line</value>
+  </data>
+  <data name="newModBtn.Text" xml:space="preserve">
+    <value>Create New Mod</value>
+  </data>
+  <data name="newModBtn.Tooltip" xml:space="preserve">
+    <value>Create New Mod</value>
+  </data>
+  <data name="buttonItem7.Text" xml:space="preserve">
+    <value>Compile</value>
+  </data>
+  <data name="buttonItem7.Tooltip" xml:space="preserve">
+    <value>Compile active script</value>
+  </data>
+  <data name="modToolbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 25</value>
+  </data>
+  <data name="modToolbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 25</value>
+  </data>
+  <data name="modToolbar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="modToolbar.Text" xml:space="preserve">
+    <value>Game tools</value>
+  </data>
+  <data name="&gt;&gt;modToolbar.Name" xml:space="preserve">
+    <value>modToolbar</value>
+  </data>
+  <data name="&gt;&gt;modToolbar.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Bar, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;modToolbar.Parent" xml:space="preserve">
+    <value>dockSite7</value>
+  </data>
+  <data name="&gt;&gt;modToolbar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dockSite7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="dockSite7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dockSite7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 50</value>
+  </data>
+  <data name="dockSite7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;dockSite7.Name" xml:space="preserve">
+    <value>dockSite7</value>
+  </data>
+  <data name="&gt;&gt;dockSite7.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockSite, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockSite7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockSite7.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="dockSite8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="dockSite8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 490</value>
+  </data>
+  <data name="dockSite8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 0</value>
+  </data>
+  <data name="dockSite8.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;dockSite8.Name" xml:space="preserve">
+    <value>dockSite8</value>
+  </data>
+  <data name="&gt;&gt;dockSite8.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockSite, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockSite8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockSite8.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="bar1.AccessibleDescription" xml:space="preserve">
+    <value>bar1 (bar1)</value>
+  </data>
+  <data name="bar1.AccessibleName" xml:space="preserve">
+    <value>bar1</value>
+  </data>
+  <data name="bar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="bar1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="statusLabel.Text" xml:space="preserve">
+    <value>Ready...</value>
+  </data>
+  <data name="bar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 490</value>
+  </data>
+  <data name="bar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 16</value>
+  </data>
+  <data name="bar1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="bar1.Text" xml:space="preserve">
+    <value>bar1</value>
+  </data>
+  <data name="&gt;&gt;bar1.Name" xml:space="preserve">
+    <value>bar1</value>
+  </data>
+  <data name="&gt;&gt;bar1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Bar, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;bar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bar1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>HapGame Editor (version 0.1 alpha)</value>
+  </data>
+  <data name="&gt;&gt;dotNetBarManager1.Name" xml:space="preserve">
+    <value>dotNetBarManager1</value>
+  </data>
+  <data name="&gt;&gt;dotNetBarManager1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DotNetBarManager, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockContainerItem1.Name" xml:space="preserve">
+    <value>dockContainerItem1</value>
+  </data>
+  <data name="&gt;&gt;dockContainerItem1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockContainerItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;dockContainerItem2.Name" xml:space="preserve">
+    <value>dockContainerItem2</value>
+  </data>
+  <data name="&gt;&gt;dockContainerItem2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.DockContainerItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem1.Name" xml:space="preserve">
+    <value>buttonItem1</value>
+  </data>
+  <data name="&gt;&gt;buttonItem1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;newMenuItem.Name" xml:space="preserve">
+    <value>newMenuItem</value>
+  </data>
+  <data name="&gt;&gt;newMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;cmdNew.Name" xml:space="preserve">
+    <value>cmdNew</value>
+  </data>
+  <data name="&gt;&gt;cmdNew.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Command, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;openMenuItem.Name" xml:space="preserve">
+    <value>openMenuItem</value>
+  </data>
+  <data name="&gt;&gt;openMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;cmdOpen.Name" xml:space="preserve">
+    <value>cmdOpen</value>
+  </data>
+  <data name="&gt;&gt;cmdOpen.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Command, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;saveMenuItem.Name" xml:space="preserve">
+    <value>saveMenuItem</value>
+  </data>
+  <data name="&gt;&gt;saveMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;cmdSave.Name" xml:space="preserve">
+    <value>cmdSave</value>
+  </data>
+  <data name="&gt;&gt;cmdSave.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Command, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;saveAsMenuItem.Name" xml:space="preserve">
+    <value>saveAsMenuItem</value>
+  </data>
+  <data name="&gt;&gt;saveAsMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;cmdSaveAs.Name" xml:space="preserve">
+    <value>cmdSaveAs</value>
+  </data>
+  <data name="&gt;&gt;cmdSaveAs.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Command, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;closeMenuItem.Name" xml:space="preserve">
+    <value>closeMenuItem</value>
+  </data>
+  <data name="&gt;&gt;closeMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;printMenuItem.Name" xml:space="preserve">
+    <value>printMenuItem</value>
+  </data>
+  <data name="&gt;&gt;printMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem5.Name" xml:space="preserve">
+    <value>buttonItem5</value>
+  </data>
+  <data name="&gt;&gt;buttonItem5.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem10.Name" xml:space="preserve">
+    <value>buttonItem10</value>
+  </data>
+  <data name="&gt;&gt;buttonItem10.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;exitMenuItem.Name" xml:space="preserve">
+    <value>exitMenuItem</value>
+  </data>
+  <data name="&gt;&gt;exitMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem8.Name" xml:space="preserve">
+    <value>buttonItem8</value>
+  </data>
+  <data name="&gt;&gt;buttonItem8.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;undoMenuItem.Name" xml:space="preserve">
+    <value>undoMenuItem</value>
+  </data>
+  <data name="&gt;&gt;undoMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;redoMenuItem.Name" xml:space="preserve">
+    <value>redoMenuItem</value>
+  </data>
+  <data name="&gt;&gt;redoMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;cutMenuItem.Name" xml:space="preserve">
+    <value>cutMenuItem</value>
+  </data>
+  <data name="&gt;&gt;cutMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;copyMenuItem.Name" xml:space="preserve">
+    <value>copyMenuItem</value>
+  </data>
+  <data name="&gt;&gt;copyMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;pasteMenuItem.Name" xml:space="preserve">
+    <value>pasteMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pasteMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem6.Name" xml:space="preserve">
+    <value>buttonItem6</value>
+  </data>
+  <data name="&gt;&gt;buttonItem6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;settingsMenuItem.Name" xml:space="preserve">
+    <value>settingsMenuItem</value>
+  </data>
+  <data name="&gt;&gt;settingsMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;windowMenu.Name" xml:space="preserve">
+    <value>windowMenu</value>
+  </data>
+  <data name="&gt;&gt;windowMenu.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;cascadeWndMenuItem.Name" xml:space="preserve">
+    <value>cascadeWndMenuItem</value>
+  </data>
+  <data name="&gt;&gt;cascadeWndMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;tileVerticalMenuItem.Name" xml:space="preserve">
+    <value>tileVerticalMenuItem</value>
+  </data>
+  <data name="&gt;&gt;tileVerticalMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;tileHorizontalMenuItem.Name" xml:space="preserve">
+    <value>tileHorizontalMenuItem</value>
+  </data>
+  <data name="&gt;&gt;tileHorizontalMenuItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem11.Name" xml:space="preserve">
+    <value>buttonItem11</value>
+  </data>
+  <data name="&gt;&gt;buttonItem11.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem17.Name" xml:space="preserve">
+    <value>buttonItem17</value>
+  </data>
+  <data name="&gt;&gt;buttonItem17.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem12.Name" xml:space="preserve">
+    <value>buttonItem12</value>
+  </data>
+  <data name="&gt;&gt;buttonItem12.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem2.Name" xml:space="preserve">
+    <value>buttonItem2</value>
+  </data>
+  <data name="&gt;&gt;buttonItem2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem3.Name" xml:space="preserve">
+    <value>buttonItem3</value>
+  </data>
+  <data name="&gt;&gt;buttonItem3.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;saveToolbarItem.Name" xml:space="preserve">
+    <value>saveToolbarItem</value>
+  </data>
+  <data name="&gt;&gt;saveToolbarItem.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem14.Name" xml:space="preserve">
+    <value>buttonItem14</value>
+  </data>
+  <data name="&gt;&gt;buttonItem14.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem15.Name" xml:space="preserve">
+    <value>buttonItem15</value>
+  </data>
+  <data name="&gt;&gt;buttonItem15.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem16.Name" xml:space="preserve">
+    <value>buttonItem16</value>
+  </data>
+  <data name="&gt;&gt;buttonItem16.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem13.Name" xml:space="preserve">
+    <value>buttonItem13</value>
+  </data>
+  <data name="&gt;&gt;buttonItem13.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem4.Name" xml:space="preserve">
+    <value>buttonItem4</value>
+  </data>
+  <data name="&gt;&gt;buttonItem4.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;runRenderer.Name" xml:space="preserve">
+    <value>runRenderer</value>
+  </data>
+  <data name="&gt;&gt;runRenderer.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;gameRun.Name" xml:space="preserve">
+    <value>gameRun</value>
+  </data>
+  <data name="&gt;&gt;gameRun.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;gameCmd.Name" xml:space="preserve">
+    <value>gameCmd</value>
+  </data>
+  <data name="&gt;&gt;gameCmd.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;newModBtn.Name" xml:space="preserve">
+    <value>newModBtn</value>
+  </data>
+  <data name="&gt;&gt;newModBtn.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;buttonItem7.Name" xml:space="preserve">
+    <value>buttonItem7</value>
+  </data>
+  <data name="&gt;&gt;buttonItem7.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;styleManager1.Name" xml:space="preserve">
+    <value>styleManager1</value>
+  </data>
+  <data name="&gt;&gt;styleManager1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.StyleManager, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
+    <value>saveFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.Name" xml:space="preserve">
+    <value>statusLabel</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;positionLabel.Name" xml:space="preserve">
+    <value>positionLabel</value>
+  </data>
+  <data name="&gt;&gt;positionLabel.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;modPopup.Name" xml:space="preserve">
+    <value>modPopup</value>
+  </data>
+  <data name="&gt;&gt;modPopup.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;popModInfoDat.Name" xml:space="preserve">
+    <value>popModInfoDat</value>
+  </data>
+  <data name="&gt;&gt;popModInfoDat.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;popDeleteMod.Name" xml:space="preserve">
+    <value>popDeleteMod</value>
+  </data>
+  <data name="&gt;&gt;popDeleteMod.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;popRunGameMod.Name" xml:space="preserve">
+    <value>popRunGameMod</value>
+  </data>
+  <data name="&gt;&gt;popRunGameMod.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Office2007Form, DevComponents.DotNetBar2, Version=9.0.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b</value>
+  </data>
+  <metadata name="styleManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>149, 56</value>
+  </metadata>
+  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>289, 56</value>
+  </metadata>
+</root>

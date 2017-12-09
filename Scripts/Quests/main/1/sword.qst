@@ -1,0 +1,18 @@
+function init()
+	setQuestName("Kupiec");
+	setQuestDescription("Sprzedaj kupcowi miecz wykonany przez ojca");
+
+	declareVariable('main_1_sword_started', 2);
+	setVariable('main_1_sword_started', true);
+
+	eqGiveObj(getObj("Player"), "Obj/Item/Weapon/Axe/0.obj");
+end
+
+function completed()
+	if variableExist('main_1_merchant_sword_sell') == true then
+		deleteVariable('main_1_sword_started');
+		deleteVariable('main_1_merchant_sword_sell');
+
+		endQuest();
+	end
+end

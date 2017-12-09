@@ -1,0 +1,36 @@
+function main()
+	if variableExist('002_talked_with_xawran') == true then
+		if Get('Player::Iron') == 10 then
+			DialogueText('O widze masz o co prosi³em.', '');
+			Answer('Tak', 'exit2', '');
+		else
+
+		end
+	else
+		declareVariable('002_talked_with_xawran', 2);
+		DialogueText('Czego chcesz?', '');
+		Answer('Przys³a³ mnie wasz so³tys, ponoæ macie dobr¹ broñ', 'a1', '');
+	end	
+
+end
+
+function a1()
+	Monologue(3, 'Mam bardzo dobr¹ broñ, lecz z³odzieje mi j¹ ukradli', '', 'a z³o¿a ¿elaza zajmowane s¹ przez szkielety.', '', 'Jakbyœ móg³ mi przynieœæ 10 sztuk ¿elaza zrobi³bym ci nie parszywy miecz.', '');
+	Answer('Dobrze, przyniosê ci to czego chcesz.', 'exitQW', ''):
+end
+
+function exit()
+	setVariable('002_talked_with_xawran', true);
+	exit();
+end
+
+function exitQW()
+	setVariable('002_talked_with_xawran', true);
+	startQuest('Quests/iron.qst');
+end
+
+function exit2()
+	declareVariable('002_task_done', 2);
+	setVariable('002_task_done', true);
+	exit();
+end

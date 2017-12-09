@@ -1,0 +1,19 @@
+function main()
+	start1();
+end
+
+function start1()
+	DialogueText("Witaj, co ciê tu sprowadza?", "");
+	Answer("Co tu hodujecie i po co?", "a1", "");
+	Answer("Nic, muszê ju¿ lecieæ...", "exit1", ""); 
+end
+
+function a1()
+	Monologue(3, "Juki, hektary pola z jukami", "", "S¹ one czêœciowo genetycznie zmodyfikowane, ale po wykopaniu modyfikujemy je jeszcze raz w tej stodole", "", "U¿ywamy ich do produkcji marychy z du¿¹ zawartoœci¹ alkoholu ;) Spoko, no nie?", "");
+	--DialogueText("Fajne, co nie?", "");
+	Answer("Super! Muszê ju¿ lecieæ, dalsza czêœæ dialogu w nastêpnej wersji", "exit1", "");
+end
+
+function exit1()
+	deleteDialogue();
+end
